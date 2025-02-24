@@ -1,6 +1,6 @@
-# Computer Graphics Rendering: Coursework 2
+# High Performance Raytracer Image Render
 
-This repository contains the source code and supporting files for a raytracer project developed as part of a computer graphics coursework. The project implements a full-featured raytracer that supports a wide range of rendering techniques—from basic image generation and intersection tests to advanced features like BRDF sampling, depth-of-field effects, and subsurface scattering.
+This repository contains the source code and supporting files for a raytracer project. The project implements a full-featured raytracer that supports a wide range of rendering techniques—from basic image generation and intersection tests to advanced features like BRDF sampling, depth-of-field effects, and subsurface scattering.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -9,7 +9,6 @@ This repository contains the source code and supporting files for a raytracer pr
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Future Improvements](#future-improvements)
 - [References](#references)
 
 ## Overview
@@ -44,8 +43,8 @@ This raytracer project is designed to render 3D scenes by simulating the interac
 ## Installation and Compilation
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/HlnnnWnng/High-Performance-Raytracer-Image-Render.git
+   cd High-Performance-Raytracer-Image-Render
    ```
 
 2. **Compile the Project:** A Makefile is provided. Simply run:
@@ -83,16 +82,8 @@ For example:
 - **nlohmann/json:** For parsing JSON files ([GitHub Repository](https://github.com/nlohmann/json))
 - Standard libraries such as `<iostream>`, `<fstream>`, `<cmath>`, etc.
 
-## Future Improvements
-- **Performance Optimizations:** Further refine the BVH construction (e.g., using Surface Area Heuristics) and explore parallel processing.
-- **Enhanced Texture Sampling:** Implement bilinear filtering to improve texture quality.
-- **Advanced Lighting Models:** Integrate the Fresnel effect more accurately and extend BRDF models.
-- **Robust Error Handling:** Improve JSON parsing and error messaging for better reliability.
-
 ## References
 - [Möller-Trumbore Algorithm (MT97)](https://www.graphics.cornell.edu/pubs/1997/MT97.pdf)
 - [Reinhard Tone Mapping (RSSF23)](https://www.cs.cmu.edu/~ph/865/2012/readings/Reinhard2002HDR.pdf)
 - Additional details and theory can be found in the project report.
 ```
-
-This full README includes everything in one document—no separation between sections. You can copy and paste it directly into a `README.md` file in your repository. Let me know if you need further modifications! 🚀
