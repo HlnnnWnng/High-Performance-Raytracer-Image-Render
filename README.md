@@ -1,8 +1,3 @@
-Here's the full `README.md` file in one continuous block:
-
----
-
-```markdown
 # Computer Graphics Rendering: Coursework 2
 
 This repository contains the source code and supporting files for a raytracer project developed as part of a computer graphics coursework. The project implements a full-featured raytracer that supports a wide range of rendering techniques—from basic image generation and intersection tests to advanced features like BRDF sampling, depth-of-field effects, and subsurface scattering.
