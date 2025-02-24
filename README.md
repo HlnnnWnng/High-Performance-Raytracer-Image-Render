@@ -69,7 +69,7 @@ For example:
 ## Project Structure
 ```
 ├── Code
-│   ├── jsons         # JSON scene configuration files
+│   ├── jsons         # JSON sample scenes
 │   ├── models        # .obj and .mtl files for mesh testing
 │   └── [source files]# C++ source code for the raytracer
 ├── TestSuite         # Test cases and sample scenes with expected outputs
