@@ -1,0 +1,58 @@
+{
+    "nbounces": 4,
+    "rendermode": "pathtracing",
+    "camera": { 
+        "type": "pinhole", 
+        "width": 1280, 
+        "height": 720,
+        "position": [1.8, 12, 68],
+        "lookAt": [0, 1.5, 0],
+        "upVector": [0.0, 1.0, 0.0],
+        "fov": 6,
+        "exposure": 1,
+        "aperture": 0.5
+    },
+    "scene": { 
+        "backgroundcolor": [0.25, 0.25, 0.25], 
+        "lightsources": [ 
+            { 
+                "type": "arealight", 
+                "position": [0, 5, 5], 
+                "u": [2, 0, 0],
+                "v": [0, 0, 2],
+                "intensity": [10, 10, 10] 
+            },
+            { 
+                "type": "arealight", 
+                "position": [-5.0, 5.0, -5.0], 
+                "u": [2, 0, 0],
+                "v": [0, 0, 2],
+                "intensity": [20,20, 20] 
+            },
+            { 
+                "type": "arealight", 
+                "position": [5.0, 5.0, -5.0], 
+                "u": [2, 0, 0],
+                "v": [0, 0, 2],
+                "intensity": [10,10, 10] 
+            }
+        ], 
+        "shapes": [ 
+            { 
+                "type": "mesh",
+                "filename": "models/CompleteScene.obj",
+                "material": {
+                    "ks": 0.3,
+                    "kd": 0.7,
+                    "specularexponent": 50,
+                    "diffusecolor": [1.0, 1.0, 1.0],
+                    "specularcolor": [1.0, 1.0, 1.0],
+                    "isreflective": false,
+                    "reflectivity": 0.3,
+                    "isrefractive": false,
+                    "refractiveindex": 1.0
+                }
+            }
+        ] 
+    } 
+}

@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "gcc",
+        "args": [
+          "-fopenmp",
+          "-I/opt/homebrew/opt/libomp/include",
+          "-L/opt/homebrew/opt/libomp/lib",
+          "-o",
+          "raytracer",
+          "raytracer.cpp"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "detail": "Build raytracer with OpenMP"
+      }
+    ]
+  }
+  

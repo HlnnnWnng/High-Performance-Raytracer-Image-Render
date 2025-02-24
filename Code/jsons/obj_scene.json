@@ -1,0 +1,47 @@
+{
+    "nbounces": 8,
+    "rendermode": "phong",
+    "camera": { 
+        "type": "pinhole", 
+        "width": 1200, 
+        "height": 800,
+        "position": [10.0, -10.0, 20.0],
+        "lookAt": [0.0, 0.0, 0.0],
+        "upVector": [0.0, 1.0, 0.0],
+        "fov": 45.0,
+        "exposure": 1
+    },
+    "scene": { 
+        "backgroundcolor": [0.25, 0.25, 0.25], 
+        "ambientlight": [0.2, 0.2, 0.2],
+        "lightsources": [ 
+            { 
+                "type": "pointlight", 
+                "position": [5.0, 5.0, -5.0], 
+                "intensity": [1.0, 1.0, 1.0] 
+            },
+            { 
+                "type": "pointlight", 
+                "position": [-5.0, 5.0, -5.0], 
+                "intensity": [1.0, 1.0, 1.0] 
+            }
+        ], 
+        "shapes": [ 
+            { 
+                "type": "mesh",
+                "filename": "models/texture2.obj",
+                "material": {
+                    "ks": 0.3,
+                    "kd": 0.7,
+                    "specularexponent": 50,
+                    "diffusecolor": [1.0, 0.0, 0.0],
+                    "specularcolor": [1.0, 1.0, 1.0],
+                    "isreflective": false,
+                    "reflectivity": 0.0,
+                    "isrefractive": false,
+                    "refractiveindex": 1.0 
+                }
+            }
+        ] 
+    } 
+}

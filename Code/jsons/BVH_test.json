@@ -1,0 +1,47 @@
+{
+    "nbounces": 8,
+    "rendermode": "pathtracing",
+    "camera": { 
+        "type": "pinhole", 
+        "width": 1200, 
+        "height": 800,
+        "position": [3, 5, 10],
+        "lookAt": [0.0, 3, 3],
+        "upVector": [0.0, 1.0, 0.0],
+        "fov": 45.0,
+        "exposure": 1
+    },
+    "scene": { 
+        "backgroundcolor": [0.25, 0.25, 0.25], 
+        "ambientlight": [0.5, 0.5, 0.5],
+        "lightsources": [ 
+            { 
+                "type": "pointlight", 
+                "position": [0, 5, 10], 
+                "intensity": [1, 1, 1] 
+            },
+            { 
+                "type": "pointlight", 
+                "position": [-5.0, 5.0, -5.0], 
+                "intensity": [1, 1, 1] 
+            }
+        ], 
+        "shapes": [ 
+            { 
+                "type": "mesh",
+                "filename": "models/Letter.obj",
+                "material": {
+                    "ks": 0.3,
+                    "kd": 0.7,
+                    "specularexponent": 50,
+                    "diffusecolor": [1.0, 1.0, 1.0],
+                    "specularcolor": [1.0, 1.0, 1.0],
+                    "isreflective": false,
+                    "reflectivity": 1,
+                    "isrefractive": false,
+                    "refractiveindex": 1.0
+                }
+            }
+        ] 
+    } 
+}
